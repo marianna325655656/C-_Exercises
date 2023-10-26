@@ -3,42 +3,42 @@
 //print planets distance by using if else, switch
 
 
-//string[] planets = { "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
+string[] planets = { "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
 
-//Console.Write("Enter the planet name: ");
-//string input = Console.ReadLine();
+Console.Write("Enter the planet name: ");
+string input = Console.ReadLine();
 
-//switch (input)
-//{
-//    case "Mercury":
-//        Console.WriteLine("The distance is 57,900,000 km");
-//        break;
-//    case "Venus":
-//        Console.WriteLine("The distance is 108,200,000 km");
-//        break;
-//    case "Earth":
-//        Console.WriteLine("The distance is 149,600,000 km");
-//        break;
-//    case "Mars":
-//        Console.WriteLine("The distance is 227,900,000 km");
-//        break;
-//    case "Jupiter":
-//        Console.WriteLine("The distance is 778,600,000 km");
-//        break;
-//    case "Saturn":
-//        Console.WriteLine("The distance is 1,433,500,000 km");
-//        break;
-//    case "Uranus":
-//        Console.WriteLine("The distance is 2,872,500,000 km");
-//        break;
-//    case "Neptune":
-//        Console.WriteLine("The distance is 4,495,100,000 km");
-//        break;
+switch (input)
+{
+    case "Mercury":
+        Console.WriteLine("The distance is 57,900,000 km");
+        break;
+    case "Venus":
+        Console.WriteLine("The distance is 108,200,000 km");
+        break;
+    case "Earth":
+        Console.WriteLine("The distance is 149,600,000 km");
+        break;
+    case "Mars":
+        Console.WriteLine("The distance is 227,900,000 km");
+        break;
+    case "Jupiter":
+        Console.WriteLine("The distance is 778,600,000 km");
+        break;
+    case "Saturn":
+        Console.WriteLine("The distance is 1,433,500,000 km");
+        break;
+    case "Uranus":
+        Console.WriteLine("The distance is 2,872,500,000 km");
+        break;
+    case "Neptune":
+        Console.WriteLine("The distance is 4,495,100,000 km");
+        break;
 
-//    default:
-//        Console.WriteLine("The planet is not found");
-//        break;
-//}
+    default:
+        Console.WriteLine("The planet is not found");
+        break;
+}
 
 Dictionary<string, string> planetNames = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
 {
