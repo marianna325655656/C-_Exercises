@@ -8,190 +8,190 @@
 
 
 
-using System.Threading.Channels;
+//using System.Threading.Channels;
 
-using System.Threading.Channels;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
+//using System.Threading.Channels;
+//using System.Runtime.CompilerServices;
+//using System.Security.Cryptography.X509Certificates;
 
 
-int CalculateFactorial(int n)
-{
-    int factorial = 1;
+//int CalculateFactorial(int n)
+//{
+//    int factorial = 1;
 
-    for (int i = 1; i <= n; i++)
-    {
+//    for (int i = 1; i <= n; i++)
+//    {
 
-        factorial = factorial * i;
+//        factorial = factorial * i;
 
-    }
-    return factorial;
-}
-Console.WriteLine("factorial: " + CalculateFactorial(5));
+//    }
+//    return factorial;
+//}
+//Console.WriteLine("factorial: " + CalculateFactorial(5));
 
 // ka 2 hat employee, petq a hashvel irants average salaryn
 
 
 
 
-static int mymethod(int x)
-{
+//static int mymethod(int x)
+//{
 
-    return 3 - x;
-
-
-}
-
-Console.WriteLine(mymethod(2));
-Console.WriteLine(mymethod(1));
+//    return 3 - x;
 
 
+//}
 
-1024 hat meshok ka, meki mej 0.8gramnaotsner en , mnatsatsneri mej 1 gramanotsner, mi kshrumov gtnel keghts meshok
-
-
-using system.componentmodel;
-
-int a = 10;
-int b = 5;
-
-Console.WriteLine($"before swapping: a = {a} b = {b}");
-swapvalues(ref a, ref b);
-Console.WriteLine($"after swapping: a = {a} b = {b}");
+//Console.WriteLine(mymethod(2));
+//Console.WriteLine(mymethod(1));
 
 
-static void swapvalues(ref int a, ref int b)
-{
-    int temp = a;
-    a = b;
-    b = temp;
-}
 
-string anun = "armen";
-string azganun = "rafayelyan";
-Console.WriteLine($"before swapping: anun = {anun} azganun = {azganun}");
-
-swapstrings(ref anun, ref azganun);
-Console.WriteLine($"after swapping: anun = {azganun} azganun = {anun}");
-
-string fullname = appendtext(ref anun, ref azganun);
-
-Console.WriteLine($"fullname: {fullname}");
-
-static void swapstrings(ref string anun, ref string azganun)
-{
-    string firstname = anun;
-    anun = azganun;
-    azganun = firstname;
-
-}
-
-static string appendtext(ref string anun, ref string azganun)
-{
-    string fullname = anun + " " + azganun;
-    return fullname;
-}
-
-int outsidevar = 20;
-somefunction(ref outsidevar);
+//1024 hat meshok ka, meki mej 0.8gramnaotsner en , mnatsatsneri mej 1 gramanotsner, mi kshrumov gtnel keghts meshok
 
 
-static void somefunction(ref int insidevar)
-{
+//using System.ComponentModel;
 
-    insidevar = insidevar + 10;
-}
+//int a = 10;
+//int b = 5;
 
-Console.WriteLine(outsidevar);
-
-int outsidevar = 20;
-somefunction(out outsidevar);
+//Console.WriteLine($"before swapping: a = {a} b = {b}");
+//swapvalues(ref a, ref b);
+//Console.WriteLine($"after swapping: a = {a} b = {b}");
 
 
-static void somefunction(out int insidevar)
-{
-    insidevar = 5;
-    insidevar = insidevar + 10;
-}
+//static void swapvalues(ref int a, ref int b)
+//{
+//    int temp = a;
+//    a = b;
+//    b = temp;
+//}
 
-Console.WriteLine(outsidevar);
+//string anun = "armen";
+//string azganun = "rafayelyan";
+//Console.WriteLine($"before swapping: anun = {anun} azganun = {azganun}");
 
-int m = 10;
-int n = 15;
-int max = max(m, n, out max);
-Console.WriteLine("the maximum return value is: {0}", max);
+//swapstrings(ref anun, ref azganun);
+//Console.WriteLine($"after swapping: anun = {azganun} azganun = {anun}");
 
-max(m, n, out max);
+//string fullname = appendtext(ref anun, ref azganun);
 
-Console.WriteLine("the maximum value of out is: {0}", max);
+//Console.WriteLine($"fullname: {fullname}");
 
-maxref(m, n, ref max);
-Console.WriteLine("the maximum value of ref is: {0}", max);
+//static void swapstrings(ref string anun, ref string azganun)
+//{
+//    string firstname = anun;
+//    anun = azganun;
+//    azganun = firstname;
 
-Console.Read();
+//}
+
+//static string appendtext(ref string anun, ref string azganun)
+//{
+//    string fullname = anun + " " + azganun;
+//    return fullname;
+//}
+
+//int outsidevar = 20;
+//somefunction(ref outsidevar);
+
+
+//static void somefunction(ref int insidevar)
+//{
+
+//    insidevar = insidevar + 10;
+//}
+
+//Console.WriteLine(outsidevar);
+
+//int outsidevar = 20;
+//somefunction(out outsidevar);
+
+
+//static void somefunction(out int insidevar)
+//{
+//    insidevar = 5;
+//    insidevar = insidevar + 10;
+//}
+
+//Console.WriteLine(outsidevar);
+
+//int m = 10;
+//int n = 15;
+//int max = max(m, n, out max);
+//Console.WriteLine("the maximum return value is: {0}", max);
+
+//Max(m, n, out max);
+
+//Console.WriteLine("the maximum value of out is: {0}", max);
+
+//MaxRef(m, n, ref max);
+//Console.WriteLine("the maximum value of ref is: {0}", max);
+
+//Console.Read();
         
 
-        static int Max(int a, int b)
-{
-    return a > b ? a : b;
-}
+//        static int Max(int a, int b)
+//{
+//    return a > b ? a : b;
+//}
 
-static void Max(int a, int b, out int max)
-{
-    //out parameter must be initialized (assigned) inside the method
-    //it implies that the out parameter must be changed.
+//static void Max(int a, int b, out int max)
+//{
+//    //out parameter must be initialized (assigned) inside the method
+//    //it implies that the out parameter must be changed.
 
-    max = a > b ? a : b;
-}
+//    max = a > b ? a : b;
+//}
 
-static void maxref(int a, int b, ref int max)
-{
-    //nothing is done, ref chooses not to change the original value of max
-}
-
-
-string str = "hello";
-test(ref str);
-Console.WriteLine(str);
-
-Console.read();
+//static void MaxRef(int a, int b, ref int max)
+//{
+//    //nothing is done, ref chooses not to change the original value of max
+//}
 
 
+//string str = "hello";
+//test(ref str);
+//Console.WriteLine(str);
 
-
-static void test(ref string a)
-{
-    a = "test";
-}
-
-Console.WriteLine("please enter user name");
-string name = Console.ReadLine();
-Console.WriteLine("Please enter password");
-string pwd = Console.ReadLine();
-string msg;
-if (IsLogin(name, pwd, out msg))
-{
-
-    //todo
-}
-Console.WriteLine(msg);
-
-
-Console.Read();
+//Console.Read();
 
 
 
-static bool IsLogin(string name, string pwd, out string msg)
-{
-    if (name == "andmin" && pwd == "666")
-    {
-        msg = "login successful!";
-        return true;
-    }
-    else
-    {
-        msg = "Login failed!";
-        return false;
-    }
-}
+
+//static void test(ref string a)
+//{
+//    a = "test";
+//}
+
+//Console.WriteLine("please enter user name");
+//string name = Console.ReadLine();
+//Console.WriteLine("Please enter password");
+//string pwd = Console.ReadLine();
+//string msg;
+//if (IsLogin(name, pwd, out msg))
+//{
+
+//    //todo
+//}
+//Console.WriteLine(msg);
+
+
+//Console.Read();
+
+
+
+//static bool IsLogin(string name, string pwd, out string msg)
+//{
+//    if (name == "andmin" && pwd == "666")
+//    {
+//        msg = "login successful!";
+//        return true;
+//    }
+//    else
+//    {
+//        msg = "Login failed!";
+//        return false;
+//    }
+//}
 
